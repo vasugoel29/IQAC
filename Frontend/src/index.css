@@ -1,0 +1,46 @@
+
+@import "tailwindcss";
+/* src/index.css */
+
+
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+  }
+
+ 
+  
+
+.left-scrollbar {
+    direction: rtl;
+  }
+  
+  .left-scrollbar > * {
+    direction: ltr; 
+  }
+
+  .left-scrollbar.scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(13, 51, 147, 0.6) rgba(4, 22, 88, 0.6);
+  }
+  
+  .left-scrollbar.scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .left-scrollbar.scrollbar-thin::-webkit-scrollbar-track {
+    background: rgba(251, 191, 36, 0.1);
+    border-radius: 3px;
+  }
+  
+  .left-scrollbar.scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: rgba(251, 191, 36, 0.6);
+    border-radius: 3px;
+  }
